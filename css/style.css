@@ -1,3 +1,5 @@
+
+
 body {
 	
 }
@@ -10,25 +12,27 @@ h3 {
 	
 }
 
-#portrait {
-	width: 80%;
-	border-radius: 20%;
-}
-
 #aboutme {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 #aboutmepage {
-	height: 800px;
+	min-height: 100vh;
+	max-height: 100%;
 	
 	background: url("https://36ac30c13130509695cc52edff7cc9aaed02b916.googledrive.com/host/0B-hZ9xIoiYFbcXhQejBRLXR6NGc/bridge-background.jpg") no-repeat fixed;
 	background-size: cover;
 }
 
+#aboutstuff {
+	margin: 0 auto;
+	margin: 0px 20px 0px 20px;
+}
+
 #contactpage {
-	height: 400px;
+	min-height: 80vh;
+	max-height: 100%;
 	
 	background: url("https://36ac30c13130509695cc52edff7cc9aaed02b916.googledrive.com/host/0B-hZ9xIoiYFbcXhQejBRLXR6NGc/street-background.jpg") no-repeat fixed;
 	background-size: cover;
@@ -41,7 +45,11 @@ h3 {
 }
 
 #portfoliopage {
-	height: 800px;
+	margin: 0;
+	padding: 0;
+	/*height: 800px;*/
+	min-height: 100vh;
+	max-height: 800px;
 	
 	background: url("https://36ac30c13130509695cc52edff7cc9aaed02b916.googledrive.com/host/0B-hZ9xIoiYFbcXhQejBRLXR6NGc/desert-background.jpg") no-repeat fixed;
 	background-size: cover;
@@ -49,6 +57,14 @@ h3 {
 
 #portfoliotitlediv {
 	padding: 50px;
+}
+
+#portrait {
+	width: 80%;
+	max-width: 300px;
+	border-radius: 20%;
+	display: block;
+	margin: 0 auto;
 }
 
 #socialtext {
@@ -62,7 +78,8 @@ h3 {
 #titlepage {
 	margin: 0;
 	padding: 0;
-	height: 800px;
+	min-height: 100vh;
+	max-height: 100%;
 	
 	background: url("https://36ac30c13130509695cc52edff7cc9aaed02b916.googledrive.com/host/0B-hZ9xIoiYFbcXhQejBRLXR6NGc/mountain-background.jpg") no-repeat fixed;
 	background-size: cover;
@@ -100,7 +117,7 @@ h3 {
 
 .paragraph-text {
 	font-family: Helvetica;
-	font-size: 1.4em;
+	/*font-size: 1.4em;*/
 	letter-spacing: -.01em;
 	line-height: 1.3em;
 	
@@ -123,7 +140,7 @@ h3 {
 }
 
 .port-row {
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .shadowed {
@@ -186,3 +203,38 @@ h3 {
 	color: #cccccc;
 }
 
+@media (min-width: 500px) { /* screen size until 500px */
+	.paragraph-text {
+		font-size: 1.0em;
+	}
+	.title-medium {
+		font-size: 1.6em;
+	}
+	.title-small {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 1000px) { /* screen size until 1000px */
+	.paragraph-text {
+		font-size: 1.0em;
+    }
+	.title-medium {
+		font-size: 1.6em;
+	}
+	.title-small {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 1200px) { /* screen size until 1200px */
+	.paragraph-text {
+		font-size: 1.4em;
+	}
+	.title-medium {
+		font-size: 2em;
+	}
+	.title-small {
+		font-size: 1.3em;
+	}
+}
