@@ -49,7 +49,6 @@ h3 {
 	padding: 0;
 	/*height: 800px;*/
 	min-height: 100vh;
-	max-height: 800px;
 	
 	background: url("https://36ac30c13130509695cc52edff7cc9aaed02b916.googledrive.com/host/0B-hZ9xIoiYFbcXhQejBRLXR6NGc/desert-background.jpg") no-repeat fixed;
 	background-size: cover;
@@ -115,6 +114,31 @@ h3 {
 	-webkit-filter: invert(100%);
 }
 
+.overlay {
+		
+	position: absolute;
+	
+	top: 0%;
+	
+	
+	height: 100%;
+	width: 100%;
+	
+}
+
+.overlaywithin {
+	position: absolute;
+	top: 50%;
+	
+	height: 50%;
+	width: 100%;
+	
+	color: white;
+	background: rgba(0,0,0,.5);
+	
+	box-shadow: 0px 0px 8px #000000;
+}
+
 .paragraph-text {
 	font-family: Helvetica;
 	/*font-size: 1.4em;*/
@@ -125,18 +149,15 @@ h3 {
 	text-shadow: 3px 2px 2px rgba(33, 33, 33, 1);
 }
 
-.port-cell img {
-	margin: 0;
-	padding: 0;
-	
-}
-
 .port-cell {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
 	
-	border: solid black 1px;
-	height: auto;
+	min-width: 230px;
+	max-width: 300px;
+	position: relative;
+	
 }
 
 .port-row {
@@ -173,6 +194,32 @@ h3 {
 	color: #202020;
 }
 
+.text-overlay-title {
+	margin: 0;
+	padding: 0;
+	
+	font-family: Helvetica, sans-serif;
+	letter-spacing: -.05em;
+	font-weight: bold;
+  
+	color: #cccccc;
+	
+	text-shadow: 3px 2px 2px rgba(33, 33, 33, 1);
+}
+
+.text-overlay-description {
+	margin: 0;
+	padding: 0;
+	
+	font-family: Helvetica, sans-serif;
+	letter-spacing: -.05em;
+	font-size: 1.2em;
+  
+	color: #cccccc;
+	text-shadow: 3px 2px 2px rgba(33, 33, 33, 1);
+
+}
+
 .title-large {
 	font-size: 3.2em;
 	line-height: .85em;
@@ -197,6 +244,22 @@ h3 {
 	font-weight: bold;
   
 	color: #202020;
+}
+
+.withfadein {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	opacity: 0;
+}
+.withfadein:hover {
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
 }
 
 .whited {
